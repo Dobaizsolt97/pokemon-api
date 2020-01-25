@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.gameboy {
+  height: 300px;
+  width: 250px;
+  background: #fcc223e1;
+  border-radius: 5% 5% 5% 15%;
+  min-width: 250px;
+}
+.screen {
+  background: rgba(241, 255, 224, 0.774);
+  width: 200px;
+  height: 90px;
+  margin: 15px auto;
+  border-radius: 5% 5% 5% 5%;
+  display: flex;
+  color: rgb(52, 52, 185);
+  font-size: 15px;
+}
+#poke-name {
+  width: 100%;
+  margin-right: 25px;
+}
+.inserted {
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+#red-btn {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 190px;
+  top: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(197, 0, 0);
+  color: white;
+}
+#blk-btn {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  left: 120px;
+  top: 50px;
+  border: none;
+  outline: none;
+  background-color: rgb(1, 107, 1);
+  color: white;
+}
+.screen span {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+
+  text-transform: capitalize;
+}
+.buttons {
+  width: 200px;
+  display: flex;
+  margin: 0 auto;
+}
+.buttons input {
+  width: 100px;
+}
+.buttons button {
+  width: 50%;
+}
+.joystik {
+  width: 20px;
+  height: 20px;
+  background-color: #0413a0ce;
+  border: none;
+  color: aliceblue;
+  border-radius: 10%;
+}
+
+#up {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  transform: rotate(90deg);
+}
+#left {
+  position: relative;
+  top: 75px;
+  left: 5px;
+}
+#down {
+  position: relative;
+  top: 100px;
+  left: 2px;
+  transform: rotate(90deg);
+}
+#right {
+  position: relative;
+  top: 75px;
+  left: -1px;
+}
+
+body {
+  background: #fff;
+  background: url(./pokewp1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#poke-img:hover {
+  animation: bounce 0.5s linear;
+}
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
+}
+
+#finder {
+  border: none;
+  background-color: #b38a1bea;
+
+  outline: none;
+  color: white;
+}
+#finder:hover {
+  background-color: #755b13ea;
+}
+.search {
+  outline: none;
+}
