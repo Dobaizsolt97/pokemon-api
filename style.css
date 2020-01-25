@@ -120,6 +120,7 @@ body {
   background: url(./pokewp1.jpg);
   background-size: cover;
   background-position: center;
+  transform: scale(1.5);
 }
 #poke-img:hover {
   animation: bounce 0.5s linear;
