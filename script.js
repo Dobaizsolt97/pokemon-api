@@ -46,7 +46,7 @@ right.addEventListener("click", async () => {
       img: [data.sprites["front_default"], data.sprites["back_default"]],
       type: data.types.map(type => type.type.name).join(",")
     };
-    console.log(pokeentry);
+    
     image.innerHTML = `<img class='inserted' src='${pokeentry.img[1]}'></img>`;
   }
 });
@@ -63,7 +63,6 @@ left.addEventListener("click", async () => {
       img: [data.sprites["front_default"], data.sprites["back_default"]],
       type: data.types.map(type => type.type.name).join(",")
     };
-    console.log(pokeentry);
     image.innerHTML = `<img class='inserted' src='${pokeentry.img[0]}'></img>`;
   }
 });
@@ -73,14 +72,13 @@ up.addEventListener("click", async () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
     let response = await fetch(url);
     let data = await response.json();
-    console.log(data);
     const pokeentry = {
       name: data.name,
       id: data.id,
       img: [data.sprites["front_default"], data.sprites["back_default"]],
       type: data.types.map(type => type.type.name).join(",")
     };
-    console.log(pokeentry);
+
     image.innerHTML = `<img class='inserted' src='${pokeentry.img[0]}'></img>`;
     span.innerHTML = `<h3>${pokeentry.name}</h3>
   <p>${pokeentry.type}</p>
@@ -94,7 +92,6 @@ down.addEventListener("click", async () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
     let response = await fetch(url);
     let data = await response.json();
-    console.log(data);
     const pokeentry = {
       name: data.name,
       id: data.id,
@@ -114,7 +111,6 @@ redBtn.addEventListener("click", async () => {
   const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
   let response = await fetch(url);
   let data = await response.json();
-  console.log(data);
   const pokeentry = {
     name: data.name,
     id: data.id,
@@ -136,7 +132,6 @@ greenBtn.addEventListener("click", async () => {
     const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
     let response = await fetch(url);
     let data = await response.json();
-    console.log(data);
     const pokeentry = {
       name: data.name,
       id: data.id,
