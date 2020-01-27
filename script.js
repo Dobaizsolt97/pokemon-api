@@ -33,6 +33,7 @@ button.addEventListener("click", async () => {
   pokemoncalledid = pokeentry.id;
 });
 
+
 right.addEventListener("click", async () => {
   if (called) {
     let pokemon = pokemoncalledid;
@@ -140,11 +141,9 @@ greenBtn.addEventListener("click", async () => {
       weight: data.weight / 10,
       height: data.height * 0.08
     };
-    //span.textContent = `${(pokeentry.weight * 0.45).toFixed(0)} kilograms
-    //${(pokeentry.height * 0.3).toFixed(1)} meters tall`;
     span.innerHTML = `<h3 class='greeninsert'> ${pokeentry.weight.toFixed(
       1
-    )}gk</h3>
+    )}kg</h3>
   <p class='greeninsert'>${pokeentry.height.toFixed(1)}m</p>`;
   }
 });
